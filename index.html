@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QuoteVerse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <h2>💬 QuoteVerse</h2>
+        <div id="quotesList"></div>
+
+        <div class="pagination">
+            <button onclick="prevPage()">⬅ Prev</button>
+            <span id="pageNumber">Page 1</span>
+            <button onclick="nextPage()">Next ➡</button>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <input type="text" id="search" placeholder="Search quotes...">
+
+        <div class="buttons">
+            <button onclick="filterCategory('all')">All</button>
+            <button onclick="filterCategory('success')">Success</button>
+            <button onclick="filterCategory('study')">Study</button>
+            <button onclick="filterCategory('life')">Life</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
